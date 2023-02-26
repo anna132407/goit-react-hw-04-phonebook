@@ -26,7 +26,7 @@ export function App() {
       el => el.name.toLowerCase() === contact.name.toLowerCase()
     );
     if (isExist) {
-      Notiflix.Notify.failure(`${contact.name} is already  in contacts`);
+      Notiflix.Notify.failure(`${contact.name} is already in contacts`);
       return;
     }
     const finalContact = {
